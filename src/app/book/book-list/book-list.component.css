@@ -1,0 +1,17 @@
+.card{
+    line-height: 0.5;
+    margin-top:10px;
+    width:100%;
+}
+.dbox{
+    line-height:0.5;
+    border-left:2px solid orange;
+    cursor:pointer;
+    
+}
+.col-sm-6{
+   font-family: 'Alegreya', serif;
+   color:darkblue;
+   font-size:14px;
+
+}

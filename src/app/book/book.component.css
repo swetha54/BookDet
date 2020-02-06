@@ -1,0 +1,12 @@
+#search {
+    outline: 0;
+    border-width: 0 0 2px;
+    width:50%;
+  }
+  input:focus {
+      border:none;
+    border-color: blue;
+  }
+  span{
+      float:left;
+  }

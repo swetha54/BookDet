@@ -1,0 +1,48 @@
+nav ul { 
+list-style-type: none; 
+text-decoration:none;
+padding :0;}
+a{
+    text-decoration:none;
+    color:grey;
+}
+
+    
+
+.main-navigation {
+    position:absolute;
+    margin-left:5px;
+    }
+    .main-navigation li{
+        padding:10px;
+    }
+    .main-navigation{
+        float:left;
+    }
+    .head>#logo{
+    height: 50px;
+    }
+    .books{
+        display:inline-block;
+        width:100%;
+        margin-top: 20px
+    }
+    .books>button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height:50px;
+    color:white;
+    font-size:bold;
+    border-radius:5px;;
+    }
+    
+    .content{
+        margin-left: 50px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-left: 2px solid #F0F0F0	 ;
+    height:100%;
+    }
+

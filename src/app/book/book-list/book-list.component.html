@@ -1,0 +1,15 @@
+<p>app booklist works!</p>
+<div class="row">
+        <div *ngFor="let b of book" class="col-sm-6" [ngClass]="'shadow p-3 mb-2 mt-2 bg-white rounded dbox'">
+            <!-- <div class="card w-100">
+                <div class="card-body"> -->
+               
+                    <p>{{b.title}}</p> 
+                     <p>{{b.authors}}</p> 
+                    <p>{{b.publisher}}</p> 
+                    <p>{{b.publishedDate}}</p> 
+                
+                 <!-- </div>
+            </div> -->
+        </div>
+  </div>

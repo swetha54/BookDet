@@ -4,6 +4,7 @@ import{HttpClient} from '@angular/common/http';
 import{map} from 'rxjs/operators';
 import { JsonPipe } from '@angular/common';
 import { BookService } from 'src/app/book.service';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @Component({
   selector: 'app-book-list',
@@ -14,16 +15,17 @@ import { BookService } from 'src/app/book.service';
 export class BookListComponent implements OnInit {
  
 
-  book=[];
   constructor(private http:HttpClient,private bs:BookService) { 
     
   }
+  book=[];
+  @Input('bsearch') search;
+
 
   ngOnInit() {
     this.book=this.bs.book;
-
-  }
+   }
   
-// @Input('bsearch') search:any;
+
   
 }

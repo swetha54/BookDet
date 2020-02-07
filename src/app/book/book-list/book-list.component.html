@@ -1,6 +1,7 @@
-<p>app booklist works!</p>
+<!-- <p>app booklist works!</p>
+{{search}} -->
 <div class="row">
-        <div *ngFor="let b of book" class="col-sm-6" [ngClass]="'shadow p-3 mb-2 mt-2 bg-white rounded dbox'">
+        <div *ngFor="let b of book| filter:search" class="col-md-6" [ngClass]="'shadow p-3 mb-2 mt-2 bg-white rounded dbox'">
             <!-- <div class="card w-100">
                 <div class="card-body"> -->
                

@@ -1,19 +1,33 @@
-<form class="cb">
+<html>
+<body>
+  <div class="row">
+    <div class="col-md-4"></div>
+    
+<div class="col-md-4 fbox">
+<form [ngClass]="'shadow p-3 mb-2 mt-2 bg-white rounded'" (ngSubmit)="adddetails(f)" #f="ngForm">
     <div class="form-group">
       <label for="Bookname">Enter Bookname</label>
-      <input type="text" class="form-control" id="bname" placeholder="Bookname">
+      <input type="text" class="form-control" name="title" ngModel placeholder="Bookname">
     </div>
     <div class="form-group">
       <label for="author">Enter Author</label>
-      <input type="text" class="form-control" id="author" placeholder="Author">
+      <input type="text" class="form-control" name="authors" ngModel placeholder="Author">
     </div>
     <div class="form-group">
         <label for="Publisher">Enter Publisher</label>
-        <input type="text" class="form-control" id="publisher" placeholder="publisher">
+        <input type="text" class="form-control" name="publisher" ngModel placeholder="publisher">
       </div>
       <div class="form-group">
-        <label for="Published-date">Enter Published date</label>
-        <input type="text" class="form-control" id="Published-date" placeholder="yyyy-mm-dd">
+        <label for="pdate">Enter Published date</label>
+        <input type="text" class="form-control" name="publishedDate" ngModel placeholder="yyyy-mm-dd">
       </div>
-      <button type="submit" class="btn btn-primary" (click)='addbooks($event)'>Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button> 
+      <button style="margin-left:5px" class="btn btn-primary" routerLink="/displayall">Back to Home</button>
   </form>
+</div>
+<div class="col-md-4">
+
+</div>
+</div>
+</body>
+</html>

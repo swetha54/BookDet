@@ -7,19 +7,19 @@
 <form [ngClass]="'shadow p-3 mb-2 mt-2 bg-white rounded'" (ngSubmit)="adddetails(f)" #f="ngForm">
     <div class="form-group">
       <label for="Bookname">Enter Bookname</label>
-      <input type="text" class="form-control" name="title" ngModel placeholder="Bookname">
+      <input type="text" class="form-control" name="title"  ngModel placeholder="Bookname" required/>
     </div>
     <div class="form-group">
       <label for="author">Enter Author</label>
-      <input type="text" class="form-control" name="authors" ngModel placeholder="Author">
+      <input type="text" class="form-control" name="authors"  ngModel placeholder="Author" required/>
     </div>
     <div class="form-group">
         <label for="Publisher">Enter Publisher</label>
-        <input type="text" class="form-control" name="publisher" ngModel placeholder="publisher">
+        <input type="text" class="form-control" name="publisher"  ngModel placeholder="publisher" required/>
       </div>
       <div class="form-group">
         <label for="pdate">Enter Published date</label>
-        <input type="text" class="form-control" name="publishedDate" ngModel placeholder="yyyy-mm-dd">
+        <input type="text" class="form-control" name="publishedDate"  ngModel placeholder="yyyy-mm-dd" required/>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button> 
       <button style="margin-left:5px" class="btn btn-primary" routerLink="/displayall">Back to Home</button>

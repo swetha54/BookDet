@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService } from '../book.service';
+import $ from "Jquery";
 
 @Component({
   selector: 'app-book',
@@ -13,15 +14,15 @@ export class Book implements OnInit {
    
    }
   bookary:any[]=[];
+  
   ngOnInit() {
     this.bookary=this.bservice.book;
+    
   }
-  navexpand(){
-    var c=document.getElementById("content");
-    console.log(c.margin.left);
-  }
- 
+  
 
+  
+  
   
   
 

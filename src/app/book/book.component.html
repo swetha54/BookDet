@@ -8,16 +8,38 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="container-fluid">
- <div>
-<nav class="main-navigation" (click)="navexpand()">
-    <ul>
-     <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-     <li><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
-    </ul> 
-</nav>
+
+  <div class="contanier-fluid">
+    <div class="row">
+  <div class="col-md-1">
+ <div class="page">
+  
+  <div class="main-navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+  </button>
+    <nav class="nav nav-pills flex-column collapse navbar-collapse" id="navbarNav">
+        <a href="#" class="nav-item nav-link">Menu</a>
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Content</a>
+            <div class="dropdown-menu">
+             
+                <a href="#" class="dropdown-item"></a>
+                <a href="#" class="dropdown-item"></a>
+                <a href="#" class="dropdown-item"></a>
+              
+            </div>
+        </div>
+        <a href="#" class="nav-item nav-link">Courses</a>
+    </nav>
 </div>
+  
+</div>
+  </div>
+<div class="col-md-10">
+
+
+
 <div id="content" class="content">
   
   <div class="head">
@@ -60,6 +82,9 @@
 <app-book-list [bsearch]="booksearch"></app-book-list>
 </div>
 </div>
+</div>
+</div>
+
 </body>
 </html>
 

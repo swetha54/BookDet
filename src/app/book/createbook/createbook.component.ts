@@ -18,11 +18,15 @@ b:Book[]=[];
   adddetails(form:NgForm)
   {
     const value=form.value;
-    
+    if(value.title!='' && value.authors != '' && value.publisher != '' && value.publishedDate!=''){ 
     console.log(value.title,value.authors,value.publisher,value.publishedDate);
      //const bobj=new AddBook(value.title,value.authors,value.publisher,value.publishedDate);
      this.bservice.additem(value.title,value.authors,value.publisher,value.publishedDate);
      console.log('added successfully');
+    }
+    else{
+      alert(" please fill all the details to add in database!!");
+    }
   }
 
 }

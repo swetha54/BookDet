@@ -47,7 +47,8 @@ return this.book;
     //console.log(this.entirebook);
   this.entirebook.push({title,authors,publisher,publishedDate});
   console.log(this.entirebook);
-  alert("added Successfully to the service!");  
+  alert("added Successfully to the service!");
+  // we need to push this object into source json file which is  https://www.googleapis.com/books/v1/volumes?q=kaplan%20test%20prep
    }
 }
 

@@ -13,10 +13,11 @@
   span{
       float:left;
   }
-  nav ul { 
+  
+  nav a { 
     list-style-type: none; 
     text-decoration:none;
-    padding :0;
+    padding :10px;
     height:50px;
     width:50px;
 }
@@ -24,25 +25,31 @@
         text-decoration:none;
         color:grey;
     }
-     .main-navigation:hover{
-       background-color: darkcyan;
-       width:100px;
-     }
+    
       
+
     li{
         display:inline;
         width:50px;
+        
+    }
+    .main-navigation:hover{
+        width:110px;
     }
     .main-navigation {
+        overflow-y: hidden;
         position:absolute;
-        margin-left:5px;
+        width:70px;
+        padding:20px;
+        height:100%;
+        margin: 0 20px 20px 20px; 
+        float:left;
+        border-right: 2px solid #F0F0F0	 ;
         }
         .main-navigation li{
             padding:10px;
         }
-        .main-navigation{
-            float:left;
-        }
+        
         .head>#logo{
         height: 50px;
         }
@@ -61,13 +68,13 @@
         }
         
         .content{
-            margin-left: 50px;
+
             padding-bottom: 20px;
             padding-top: 20px;
             padding-right: 20px;
             padding-left: 20px;
-            border-left: 2px solid #F0F0F0	 ;
         height:100%;
         }
-    
-    
+     
+       
+ 
